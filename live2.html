@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Position</title>
+    <style>
+        .static{
+       background-color: green;
+        }
+        .absolute{
+            position: absolute;
+            background-color: aqua;
+            top: 50px;
+            left: 50px;
+        }
+
+        .relative{
+            position: relative;
+            background-color: red;
+            top: 50px;
+            left: 50px;
+        }
+        .sticky{
+            position: sticky;
+            background-color: blue;
+            top: 150px;
+            bottom: 0;
+            left:1px ;
+        }
+        .fixed{
+            position: fixed;
+            background-color: violet;
+        }
+
+        section{
+            height: 300px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Esercizio Position</h1>
+    </header>
+    <main>
+        <section class="static">
+        <h3>Questa sezione è static</h3>
+        <div class="static">
+            <p>Questo è un elemento html</p>
+        </div>
+
+        </section>
+        <section class="absolute">
+            <h3>Questa sezione è absolute</h3>
+            <div class="absolute">
+                <p>Questo è un elemento html</p>
+            </div>
+        </section>
+        <section class="relative">
+            <h3>Questa sezione è relative</h3>
+            <div class="relative">
+                <p>Questo è un elemento html</p>
+            </div>
+        </section>
+        <section class="sticky">
+            <h3>Questa sezione è sticky</h3>
+            <div class="sticky">
+                <p>Questo è un elemento html</p>
+            </div>
+        </section>
+        </main>
+    <footer>
+<section class="fixed">
+            <h3>Questa sezione è fixed</h3>
+            <div class="fixed">
+                <p>Questo è un elemento html</p>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>

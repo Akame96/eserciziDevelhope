@@ -1,0 +1,74 @@
+<!-- Dato il form di partenza validare i campi tale che:
+ - Tutti i campi siano obbligatori.
+ - I campi relativi a numero carta di credito e CVC devono 
+ avere una prima validazione sulla lunghezza e la correttezza dei valori. -->
+
+ <!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form>
+    <label for="">Email</label>
+    <div>
+      <input type="email"required>
+    </div>
+    <label for="">Password</label>
+    <div>
+      <input type="password"required>
+    </div>
+    <label for="">Nome e Cognome</label>
+    <div>
+      <input type="text"required>
+    </div>
+    <label for="">Data di Nascita</label>
+    <div>
+      <input type="date"required>
+    </div>
+    <label for="">Telefono</label>
+    <div>
+      <input type="tel"required>
+    </div>
+    <label for="">Piano di Abbonamento</label>
+    <div>
+      <select name="" id="">
+        <option value="">Free</option>
+
+        <optgroup label="Mensili">
+          <option value="">1,99/Mese</option>
+          <option value="">3,99/Mese</option>
+          <option value="">5,99/Mese</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div>
+      <label for=""><input type="checkbox"/>Piano Pro</label>
+    </div>
+
+    <label for="">Numero Carta</label>
+    <div>
+      <input type="number" max="9999-9999-9999-9999"  pattern="[0-9]" required/>
+    </div>
+    <label for="">CVC</label>
+    <div>
+      <input type="number" max="999"  pattern="[0-9]" required/>
+    </div>
+    <label for="">Scadenza</label>
+    <div>
+      <input type="date"required>
+    </div>
+    <label for="">Indirizzo di fatturazione</label>
+    <div>
+      <input type="text"required>
+    </div>
+    <button>Registrati</button>
+  </form>
+</body>
+
+</html>

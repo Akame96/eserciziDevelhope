@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .form-item{
+            border: 1px solid blue;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        button[type = "submit"]{
+          background-color: green;
+          color: white;
+        }
+
+        button[type = "submit"]:hover{
+          background-color: white;
+          color: green;
+          border: 1px solid green;
+        }
+
+        button[type= "reset"]{
+        background-color: red;
+        color: white;
+        }
+
+        button[type= "reset"]:hover{
+        background-color: white;
+        color: red;
+        border: 1px solid red;
+        }
+        button{
+            border: 0px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="C:\Users\Nunzia\OneDrive\Desktop\HTML\linkedin.html" method="post" >
+        <div class="form-item">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="form-item">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="form-item">
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
+        </div>    
+    </form>
+</body>
+
+</html>

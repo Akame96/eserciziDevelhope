@@ -1,0 +1,37 @@
+<!-- Aggiungi alla pagina:
+
+- Un pulsante disabilitato
+- Un input numerico, con relativa label, nel range 0-100 e con step di 2
+- Una checkbox con relativa label
+- Un input di tipo date
+
+La checkbox deve essere già selezionata all'apertura della pagina.
+L'input numerico deve avere il focus all'apertura della pagina. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <button disabled="disabled">Submit</button>
+    </div>
+    <label for="ticketNum">Numero</label>
+    <div>
+        <input type="number" range="0-100" step="2" autofocus>
+    </div>
+    <div>
+        <label for=""><input type="checkbox" checked/>lista</label>
+      </div>
+      <label for="">Data</label>
+      <div>
+        <input type="date">
+      </div>
+</body>
+
+</html>

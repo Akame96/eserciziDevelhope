@@ -1,0 +1,86 @@
+<!-- Crea un form di anagrafica per la registrazione ad un piattaforma.
+
+Il form deve contenere i seguenti campi:
+ - Email
+ - Password
+ - Nome e Cognome
+ - Data di nascita
+ - Numero di telefono
+ - Selettore con scelta di un piano di abbonamento.
+   - Un piano free
+   - Un gruppo di massimo 3 piani con prezzo crescente
+ - Un campo per scegliere se aggiungere o meno i vantaggi PRO
+ - Campi per inserimento carta di scredito
+   - Numero carta
+   - CVC
+   - Scadenza
+ - Indirizzo di fatturazione -->
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form>
+    <label for="">Email</label>
+    <div>
+      <input type="email">
+    </div>
+    <label for="">Password</label>
+    <div>
+      <input type="password">
+    </div>
+    <label for="">Nome e Cognome</label>
+    <div>
+      <input type="text">
+    </div>
+    <label for="">Data di Nascita</label>
+    <div>
+      <input type="date">
+    </div>
+    <label for="">Telefono</label>
+    <div>
+      <input type="tel">
+    </div>
+    <label for="">Piano di Abbonamento</label>
+    <div>
+      <select name="" id="">
+        <option value="">Free</option>
+
+        <optgroup label="Mensili">
+          <option value="">1,99/Mese</option>
+          <option value="">3,99/Mese</option>
+          <option value="">5,99/Mese</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div>
+      <label for=""><input type="checkbox" />Piano Pro</label>
+    </div>
+
+    <label for="">Numero Carta</label>
+    <div>
+      <input type="number">
+    </div>
+    <label for="">CVC</label>
+    <div>
+      <input type="number">
+    </div>
+    <label for="">Scadenza</label>
+    <div>
+      <input type="date">
+    </div>
+    <label for="">Indirizzo di fatturazione</label>
+    <div>
+      <input type="text">
+    </div>
+    <button>Registrati</button>
+  </form>
+</body>
+
+</html>

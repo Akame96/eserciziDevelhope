@@ -1,0 +1,64 @@
+<!-- Un segnaposto per un logo nella parte superiore.
+4 collegamenti per la navigazione subito dopo il logo.
+L'avatar e il nome utente in una colonna centrata nella parte inferiore.
+La barra laterale dovrebbe avere una larghezza di 200px e 
+dovrebbe occupare l'intera altezza della pagina. 
+Aggiungi un'immagine della barra laterale che hai 
+creato nella cartella come risultato finale. 
+I 4 collegamenti devono avere un colore del testo (#2b2b2b) e 
+dovrebbero cambiare in #2b2bb2 quando passi il mouse sopra di essi, 
+con una transizione di 0.3 secondi.
+ Utilizza la proprietà CSS Flexbox per gestire il layout. -->
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        a {
+            color: #2b2b2b;
+            display: flex;
+        }
+
+        a:hover {
+            color: #2b2bb2;
+            transition: 0.3s;
+            
+        }
+
+        .utente {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+
+        }
+
+        .sidebar {
+            width: 200px;
+            height: 100%;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div>Logo</div>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </nav>
+    </div>
+    <div class="utente">
+        <img src="logo.png" alt="Titolo immagine" /> 
+        <p>Nome Utente</p>
+    </div>
+
+</body>
+
+</html>
