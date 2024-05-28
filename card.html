@@ -10,48 +10,57 @@ Prova ad usare il tag semantico <article> per creare la struttura html. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card</title>
     <style>
-    img{
-        margin: 30px;
-        border: 5px grey;
-    }
-    ul li{
-        list-style: none; 
-        border: 1px solid grey;
-        padding:5px ;   
-    }
-    p{
-        border: 1px solid grey;
-        padding: 20px;
-    }
+        ul li {
+            list-style: none;
+            border: 1px solid grey;
+            padding: 5px;
+        }
 
-    a{
-        margin: 10px;
-        border: 1px solid grey;
-        padding: 15px;
-    }
+        h3>p {
+            border: 1px solid grey;
+            padding: 20px;
+        }
+
+        a {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        img {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 150px;
+        }
+
+        .container{
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
     <div>
-    <img src="" alt="Image cap">
+        <div class="container">
+            <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/09/html3png.png.webp" alt="card">
+        </div>
+        <ul>
+            <li>
+                <h3>Card Title</h3>
+                <p>
+                    Some quick example text to build on the card title and make up the bulk of the card's contenent.
+                </p>
+            </li>
+            <li>An Item </li>
+            <li>A Second Item</li>
+            <li>A third Item</li>
+            <li>
+                <a href="Card-Link">CardLink</a>
+                <a href="Another-Link">AnotherLink</a>
+            </li>
+        </ul>
     </div>
-    <h3>Card Title</h3>
-    <p>
-        <br>
-        Some quick example text to build
-        <br>
-        on the card title and make up the bulk 
-        <br>
-        of the card's contenent.
-    </p>
-    <ul>
-        <li>An Item </li>
-        <li>A Second Item</li>
-        <li>A third Item</li>
-    </ul>
-    <a href="Card-Link">CardLink</a>
-    <a href="Another-Link">AnotherLink</a>
+
 </body>
-    
+
 </html>
