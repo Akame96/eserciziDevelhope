@@ -1,51 +1,85 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .grid-container{
-          display: grid;
-          grid-template-columns: repeat(4,1fr);
-          grid-template-rows: repeat(6,1fr);
-          padding: 10%;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcolatrice</title>
+  <style>
 
-        }
-        .grid-item{
-            border: 1px solid black;
-            font-size: 30px;
-            text-align: center;
-            padding: 20px;
-         }
+    * {
+      box-sizing: border-box;
+    }
 
-         .grid-bar{
-         border: 1px solid black;
-         font-size: 30px;
-         text-align: center;
-         background-color: orange;
-         }
-    </style>
+    .grid-container {
+      max-width: 400px;
+      margin: 0 auto;
+      border: 2px solid black;
+      border-radius: 5px;
+    }
+
+    body {
+      background-color: white;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .numero {
+      background-color: black;
+      border: none;
+      color: whitesmoke;
+      width: 100%;
+      border-bottom: 2px solid black;
+      padding: 20px;
+      text-align: right;
+      font-size: 40px;
+    }
+
+    .calculator {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-item {
+      padding: 40px;
+      cursor: pointer;
+    }
+    .grid-item-uguale{
+     background-color: orangered;
+     grid-row: span 4;
+    }
+    .grid-item-operazioni{
+      background-color: grey;
+      padding: 40%;
+    }
+  </style>
 </head>
+
 <body>
- <div class="grid-container">
-    <div class="grid-item">+</div>
-    <div class="grid-item">-</div>
-    <div class="grid-item">x</div>
-    <div class="grid-item">/</div>
-    <div class="grid-item">7</div>
-    <div class="grid-item">8</div>
-    <div class="grid-item">9</div>
-    <div class="grid-bar">=</div>
-    <div class="grid-item">4</div>
-    <div class="grid-item">5</div>
-    <div class="grid-item">6</div>
-    <div class="grid-item">1</div>
-    <div class="grid-item">2</div>
-    <div class="grid-item">3</div>
-    <div class="grid-item">0</div>
-    <div class="grid-item">.</div>
-    <div class="grid-item">AC</div>
- </div>   
+  <div class="grid-container">
+
+    <input type="text" class="numero" placeholder="0">
+    <div class="calculator">
+
+      <button class="grid-item-operazioni">&plus;</button>
+      <button class="grid-item-operazioni">&minus;</button>
+      <button class="grid-item-operazioni">&times;</button>
+      <button class="grid-item-operazioni">&divide;</button>
+      <button class="grid-item">7</button>
+      <button class="grid-item">8</button>
+      <button class="grid-item">9</button>
+      <button class="grid-item-uguale">&equals;</button>
+      <button class="grid-item">4</button>
+      <button class="grid-item">5</button>
+      <button class="grid-item">6</button>
+      <button class="grid-item">1</button>
+      <button class="grid-item">2</button>
+      <button class="grid-item">3</button>
+      <button class="grid-item">0</button>
+      <button class="grid-item">.</button>
+      <button class="grid-item">AC</button>
+    </div>
+  </div>
 </body>
+
 </html>

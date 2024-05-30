@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Position e Flexbox</title>
+    <style>
+        body {
+            height: 7000px;
+        }
+
+        section {
+            height: 300px;
+        }
+
+        .static {
+            position: static;
+            background-color: blue;
+            top: 25px;
+
+        }
+
+        .relative {
+            position: relative;
+            background-color: red;
+            top: 25px;
+        }
+
+        .absolute {
+            position: absolute;
+            background-color: orange;
+            top: 25px;
+        }
+
+        .sticky {
+            position: sticky;
+            background-color: green;
+            top: 25px;
+        }
+
+        .fixed {
+            position: fixed;
+            background-color: yellow;
+            top: 25px;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            overflow: scroll;
+        }
+
+        .inline-flex {
+            display: inline-flex;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .grid-cell{
+            height: 100px;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+
+        @media screen and (min-width:1024px) {
+            .flex{
+                flex-direction: row;
+            }
+        }
+
+        .button-blue{
+            color: white;
+
+        }
+        .button-blue:hover{
+            background-color:blue;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Esercizio position e Flexbox</h1>
+    </header>
+    <main>
+        <section class="flex">
+            <h3>Position static</h3>
+            <div style="background-color: pink;">
+                <p>Questo è un elemento HTML</p>
+            </div>
+            <section>
+                <button class="button-blue">click me</button>
+            </section>
+            
+            
+            <!-- <div class="static">
+                <p>Questo è un elemento HTML</p>
+            </div>
+            <div style="background-color:pink">
+                <p>Questo è un elemento HTML</p>
+            </div>
+        </section>
+        <section class="inline-flex">
+            <h3>Position relative</h3>
+            <div style="background-color:pink">
+                <p>Questo è un elemento HTML</p>
+            </div>
+            <div class="relative">
+                <p>Questo è un elemento HTML</p>
+            </div>
+            <div style="background-color:pink">
+                <p>Questo è un elemento HTML</p>
+            </div>
+        </section>
+        <section>
+            <h3>Position absolute</h3>
+            <div class="absolute">
+                <p>Questo è un elemento HTML</p>
+            </div>
+        </section>
+        <section class="flex">
+            <h3>Position sticky</h3>
+            <div class="grid">
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="sticky">
+                    <p>questo è un elemento HTML</p>
+                </div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+            </div>
+        </section>
+        <section>
+            <h3>Position fixed </h3>
+            <div class="fixed">
+                <p>Questo è un elemento HTML</p>
+            </div>
+        </section> -->
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
