@@ -19,13 +19,12 @@ con una transizione di 0.3 secondi.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
     <style>
-        .user-profile {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
         a {
             color: #2b2b2b;
+        }
+
+        ul {
+            list-style-type: none;
         }
 
         a:hover {
@@ -33,32 +32,41 @@ con una transizione di 0.3 secondi.
             transition: 0.3s;
 
         }
-        
-        /* .sidebar {
+
+        .sidebar {
             width: 200px;
             height: 100%;
             display: flex;
-        } */
+            background-image: url(https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356_640.png);
+            flex-direction: column;
+        }
+
+
+        .information{
+         display: block;
+         flex-direction: column;
+        text-align: center;
+        }
     </style>
 </head>
 
 <body>
     <aside>
-    <div class="sidebar">
-        <input type="" placeholder="Logo">
-    </aside>
+        <div class="sidebar">
+            <img src="#" alt="logo">
             <ul>
                 <li><a href="#">Link 1</a></li>
                 <li><a href="#">Link 2</a></li>
                 <li><a href="#">Link 3</a></li>
                 <li><a href="#">Link 4</a></li>
-            </ul> 
-    </div>
-    <footer>
-    <div class="user-profile">
-        <p>Nome Utente</p>
-    </div>
-</footer>
+            </ul>
+            <div class="information">
+            <img src="avatar.png" alt="Avatar">
+            <h6>Nome Utente</h6>
+        </div>
+        </div>
+
+    </aside>
 </body>
 
 </html>
