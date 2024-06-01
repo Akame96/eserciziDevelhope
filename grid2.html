@@ -3,7 +3,7 @@ utilizzando le proprietà CSS Grid. I blocchi verdi e
 arancioni sono alti la metà dei blocchi gialli e rossi. -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
   <meta charset="UTF-8">
@@ -14,6 +14,8 @@ arancioni sono alti la metà dei blocchi gialli e rossi. -->
     body {
       width: 60em;
       margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
     }
 
     section {
@@ -23,32 +25,42 @@ arancioni sono alti la metà dei blocchi gialli e rossi. -->
 
     #green {
       background-color: #8ffda7;
+      order: 1;
+      grid-column-start: span 4;
     }
 
     #orange {
       background-color: #ffc788;
-    }
+      order: 5;
+      grid-column-end: span 2;
+       }
 
     #yellow {
       background-color: #ffff92;
+      order:2;
     }
 
     #red {
       background-color: #ff919c;
+      order: 3;
     }
 
     #blue {
       background-color: #98d2ff;
+      order: 4;
+      height: 115%;
     }
 
     ul {
       padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
     }
 
     li {
       background-color: white;
       padding: 1em;
-      display: block;
+      display: grid;
       margin: 1em;
     }
   </style>
