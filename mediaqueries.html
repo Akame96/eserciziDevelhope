@@ -6,17 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        div{
+          display: flex;
+          justify-content: space-between;
+        }
     
      @media screen and (max-width: 768px) {
-        
+        div{
+            flex-wrap: wrap;
+        }
      }
      @media screen  and (max-width: 375px)  {
-        
+        div{
+            flex-direction: column;
+        }
      }
 
     </style>
 </head>
 <body>
-    
+    <div>
+    <img src="immagini/immagine1.png" alt="immagine1">
+    <img src="immagini/immagine2.png" alt="immagine2">
+    <img src="immagini/immagine3.png" alt="immagine3">
+</div>
 </body>
 </html>

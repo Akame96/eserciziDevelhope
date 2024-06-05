@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background-color: red;
+            height: 5vh;
+        }
+
+        main {
+            background-color: grey;
+            height: 80vh;
+            padding: 20px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        section {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+        }
+
+        footer {
+            background-color: violet;
+            height: 5vh;
+        }
+        .navbar{
+            display: flex;
+        }
+        .nav-item{
+            list-style: none;
+            color: white;
+            width: 75px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">Setting</li>
+            <li class="nav-item">Shop</li>
+            <li class="nav-item">Products</li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <p>item</p>
+        </section>
+        <section>
+            <p>item</p>
+        </section>
+        <section id="last">
+            <p>item</p>
+        </section>
+    </main>
+    <footer>
+        <p>copyright 2024 Nunzia Biele</p>
+    </footer>
+<script>
+const firstSection = document.children[0].children[1].children[1].children[0];
+console.log(firstSection);
+const lastSection = document.getElementById("last");
+console.log(lastSection);
+const tmp = document.getElementsByTagName("footer");
+console.log(tmp)
+</script>
+</body>
+
+</html>

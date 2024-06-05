@@ -7,9 +7,62 @@
     <title>Navbar</title>
 
     <style>
+
+        body{
+        background-color: rgba(0, 0, 0, 0.038);
+        }
         .search-button:hover {
             background-color: green;
             color: white;
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        nav {
+            position: fixed;
+            padding: 20px;
+            display: flex;
+            background-color: chocolate;
+            padding: 0;
+        }
+
+        .logo {
+            border: 1px solid grey;
+            padding: 11px;
+            position: relative;
+            float: right;
+            cursor: pointer;
+            background-color: black;
+            display: block;
+            width: 18px;
+            height: 20px;
+        }
+
+        .logo::before{
+            background-color: grey;
+            content: '';
+            display: block;
+            position: absolute;
+            width: 50%;
+            height: 12%; 
+            top: 5px;
+        }
+
+        
+        .logo::after{
+            background-color: grey;
+            content: '';
+            display: block;
+            position: absolute;
+            width: 50%;
+            height: 15%; 
+            top: 18px;
         }
 
         /* @media (max-width: 768px) {
@@ -27,19 +80,18 @@
     <nav>
         <div>
             <h1>Navbar</h1>
+                <input class="logo" type="checkbox">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Link</a></li>
                 <button>Dropdown</button>
                 <button disabled>Disabled</button>
             </ul>
-        </div>
-        <div>
             <input type="text" placeholder="Search">
             <button class="search-button">Search</button>
         </div>
     </nav>
-    
+
 </body>
 
 </html>

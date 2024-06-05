@@ -22,7 +22,7 @@
   </nav>
 
   <main class="main">
-    <section class="content">section</section>
+    <section class="content" id="first">section</section>
     <section class="content">section</section>
     <section class="content">section</section>
     <section class="content">section</section>
@@ -37,6 +37,17 @@
     <section class="content">section</section>
   </main>
   <footer class="footer">footer</footer>
+  <script>
+const sections = document.getElementsByClassName("content");
+for( let section of sections) {
+  section.style.width = "100px";
+  section.style.height= "100px";
+  section.style.backgroundColor = "orange";
+};
+    document.getElementsByName("main")[0].style.justifyContent("space-evenly");
+    const section= {...document.getElementById("first")}
+    
+  </script>
 </body>
 
 </html>
