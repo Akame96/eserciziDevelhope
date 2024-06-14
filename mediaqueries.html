@@ -1,34 +1,100 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
-          display: flex;
-          justify-content: space-between;
-        }
-    
-     @media screen and (max-width: 768px) {
-        div{
-            flex-wrap: wrap;
-        }
-     }
-     @media screen  and (max-width: 375px)  {
-        div{
-            flex-direction: column;
-        }
-     }
 
+        *{
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+        }
+       
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 90px;
+        }
+
+        .content-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .content-section .card{
+            flex: 1;
+            margin: 20px 20px;
+            /* box-shadow: 0px 2px 8px 0px black; */
+            border: 1px solid black;
+            border-radius: 5px;
+
+
+        }
+           
+        .content-section .card img {
+            height: auto;
+            width: 100%;
+        }
+
+        .content-section .card h3{
+            margin: 15px 0px
+
+        }
+        .content-section .card p{
+            padding: 0px 10px;
+            margin-bottom: 20px;
+        }
+
+
+        
+
+        @media screen and (max-width: 768px) {
+            .content-section{
+               display: grid;
+               grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            .content-section{
+                display: flex;
+               flex-direction: column;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <div>
-    <img src="immagini/immagine1.png" alt="immagine1">
-    <img src="immagini/immagine2.png" alt="immagine2">
-    <img src="immagini/immagine3.png" alt="immagine3">
-</div>
+
+    <div class="container">
+        <div class="content-section">
+            <div class="card">
+                <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/09/html3png.png.webp" alt="card">
+                <h3>Card 1</h3>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's contenent.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/09/html3png.png.webp" alt="card">
+                <h3>Card 2</h3>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's contenent.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/09/html3png.png.webp" alt="card">
+                <h3>Card 3</h3>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's contenent.</p>
+            </div>
+
 </body>
+
 </html>
